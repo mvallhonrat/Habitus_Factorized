@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Habitus - Planificador Semanal</title>
+  <link rel="manifest" href="manifest.json" />
+  <link rel="icon" href="icons/icon-192x192.png" />
+</head>
+<body>
+  <div id="app">
+    <header>
+      <h1>Habitus<br><small>Planificador Semanal</small></h1>
+      <select id="roleSelect"></select>
+      <button id="newWeekBtn">Nueva Semana</button>
+    </header>
+    <main>
+      <section id="taskSection">
+        <input id="taskInput" placeholder="Nueva tarea..." />
+        <button id="addTaskBtn">Añadir</button>
+        <ul id="taskList"></ul>
+      </section>
+      <section id="charts">
+        <canvas id="quadrantChart"></canvas>
+        <canvas id="completionChart"></canvas>
+      </section>
+      <section id="history">
+        <button id="showHistoryBtn">Histórico de Tareas</button>
+        <div id="historyModal" class="modal hidden"></div>
+      </section>
+    </main>
+  </div>
+  <script type="module" src="js/core.js"></script>
+</body>
+</html>
